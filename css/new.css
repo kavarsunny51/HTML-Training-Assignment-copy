@@ -78,9 +78,7 @@ body {
  font-family: Roboto;
 
 }
-.dpdn{
-  width: 730px;
-}
+
 /* Default state: Sidebar visible, main content has reduced width */
 .main-part2 {
   /* Adjust this width based on your sidebar's width (e.g., if sidebar is 250px) */

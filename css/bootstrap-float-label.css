@@ -97,3 +97,36 @@
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
   }
+
+  /* Custom CSS for has-float-label functionality */
+  .has-float-label {
+    display: block;
+    position: relative;
+}
+
+.has-float-label input,
+.has-float-label textarea {
+    padding-top: 1.5rem; /* Ensure enough space for the label */
+}
+
+.has-float-label label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.75rem 0.75rem; /* Matches Bootstrap's default padding */
+    pointer-events: none;
+    color: #6c757d; /* Bootstrap's muted text color */
+    transition: all 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+.has-float-label input:focus ~ label,
+.has-float-label input:not(:placeholder-shown) ~ label,
+.has-float-label textarea:focus ~ label,
+.has-float-label textarea:not(:placeholder-shown) ~ label {
+    font-size: 0.75rem;
+    transform: translate(0, -50%);
+    opacity: 0.7;
+    background-color: #fff; /* Optional: adds a white background to "lift" the label */
+    padding: 0.2rem 0.5rem;
+}
