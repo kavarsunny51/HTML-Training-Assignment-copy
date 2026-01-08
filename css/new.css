@@ -39,7 +39,12 @@ body {
   width: 85vw;   /* 100% of the viewport width */
   height: 100vh; 
 }
-
+.main-part2{
+  margin-top: 80px;
+        margin-left: 250px;
+        width: 85vw;   
+        height: 100vh; 
+}
 #menu-btn {
   background-color: #100901;
   color: #fff;
@@ -71,5 +76,28 @@ body {
 
 .card-body{
  font-family: Roboto;
+
+}
+.dpdn{
+  width: 730px;
+}
+/* Default state: Sidebar visible, main content has reduced width */
+.main-part2 {
+  /* Adjust this width based on your sidebar's width (e.g., if sidebar is 250px) */
+  width: calc(100% - 250px);
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* State when sidebar is collapsed (e.g., when 'sidebar-collapsed' class is added to the body) */
+body.sidebar-collapsed .main-part2 {
+  width: 100%; /* Take full width when sidebar is hidden */
+}
+
+
+@media (max-width: 1300px) {
+.side-navbar{
+  display: none;
+}
+
 
 }
