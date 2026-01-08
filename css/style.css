@@ -3,3 +3,30 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+.hero-img{
+    height: 576px;
+    width: 576px;
+}
+/* Custom CSS */
+
+@media (max-width: 990px) {
+   
+    .hero-img {
+    width: 300px;
+    height: 300px;
+    }
+  
+
+  
+  }
+  @media (max-width: 778px) {
+   
+    .hero-img {
+       display: none;
+    }
+
+  
+  }
+  
