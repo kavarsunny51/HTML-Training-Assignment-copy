@@ -1,0 +1,18 @@
+li::marker {
+        
+    font-size: 23px; 
+  }
+
+  .Americalist::marker{
+    color:red
+  }
+
+  .Canadalist::marker{
+    color:rgb(127, 230, 127)
+  }
+  .Russialist::marker{
+    color:rgb(240, 147, 25)
+  }
+  .Indialist::marker{
+    color:rgb(230, 204, 134)
+  }
